@@ -26,9 +26,21 @@ using Codewars;
 //"Hi! Hi!" ---> "Hi! Hi"
 //"Hi"      ---> "Hi"
 
-Console.WriteLine(Kata.Remove("Hi!"));      // Output: "Hi"
-Console.WriteLine(Kata.Remove("Hi!!!"));   // Output: "Hi"
-Console.WriteLine(Kata.Remove("!Hi"));     // Output: "!Hi"
-Console.WriteLine(Kata.Remove("!Hi!"));    // Output: "!Hi"
-Console.WriteLine(Kata.Remove("Hi! Hi!")); // Output: "Hi! Hi"
-Console.WriteLine(Kata.Remove("Hi"));      // Output: "Hi"
+//Console.WriteLine(Kata.Remove("Hi!"));     
+//Console.WriteLine(Kata.Remove("Hi!!!"));   
+//Console.WriteLine(Kata.Remove("!Hi"));     
+//Console.WriteLine(Kata.Remove("!Hi!"));    
+//Console.WriteLine(Kata.Remove("Hi! Hi!")); 
+//Console.WriteLine(Kata.Remove("Hi"));      
+
+
+// 33
+
+//Return the number (count) of vowels in the given string.
+
+//We will consider a, e, i, o, u as vowels for this Kata (but not y).
+
+//The input string will only consist of lower case letters and/or spaces.
+
+
+Console.WriteLine(Vowel.GetVowelCount("abracadabra"));
