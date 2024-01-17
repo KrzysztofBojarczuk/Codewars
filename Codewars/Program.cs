@@ -42,5 +42,6 @@ using Codewars;
 
 //The input string will only consist of lower case letters and/or spaces.
 
+//4 Build a pile of Cubes
 
-Console.WriteLine(Vowel.GetVowelCount("abracadabra"));
+Console.WriteLine(ASum.findNb(1071225));
