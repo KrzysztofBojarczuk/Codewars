@@ -44,4 +44,17 @@ using Codewars;
 
 //4 Build a pile of Cubes
 
-Console.WriteLine(ASum.findNb(1071225));
+//Console.WriteLine(ASum.findNb(1071225));
+
+
+//5 Ciąg Fibacciniego
+
+Console.Write("Podaj ilość elementów ciągu Fibonacciego do wygenerowania: ");
+int n = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Ciąg Fibonacciego:");
+
+for (int i = 0; i < n; i++)
+{
+    Console.Write(Fib.Fibonacci(i) + " ");
+}
