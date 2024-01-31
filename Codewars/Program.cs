@@ -49,12 +49,15 @@ using Codewars;
 
 //5 Ciąg Fibacciniego
 
-Console.Write("Podaj ilość elementów ciągu Fibonacciego do wygenerowania: ");
-int n = Convert.ToInt32(Console.ReadLine());
+//Console.Write("Podaj ilość elementów ciągu Fibonacciego do wygenerowania: ");
+//int n = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Ciąg Fibonacciego:");
+//Console.WriteLine("Ciąg Fibonacciego:");
 
-for (int i = 0; i < n; i++)
-{
-    Console.Write(Fib.Fibonacci(i) + " ");
-}
+//for (int i = 0; i < n; i++)
+//{
+//    Console.Write(Fib.Fibonacci(i) + " ");
+//}
+
+//6 FizzBuzz
+FizzBuzz.FizzBuzzList();
