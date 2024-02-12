@@ -60,4 +60,13 @@ using Codewars;
 //}
 
 //6 FizzBuzz
-FizzBuzz.FizzBuzzList();
+//FizzBuzz.FizzBuzzList();
+//8 Palindrome
+
+var palindrom = new Palindrome();
+
+Console.WriteLine("Enter the word to check:");
+string input = Console.ReadLine();
+
+string resultMessage = palindrom.IsPalindromeLong(input) ? "Word is palindrome." : "Word is not palindrome.";
+Console.WriteLine(resultMessage);
