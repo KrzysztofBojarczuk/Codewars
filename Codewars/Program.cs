@@ -63,10 +63,25 @@ using Codewars;
 //FizzBuzz.FizzBuzzList();
 //8 Palindrome
 
-var palindrom = new Palindrome();
+//var palindrom = new Palindrome();
 
-Console.WriteLine("Enter the word to check:");
-string input = Console.ReadLine();
+//Console.WriteLine("Enter the word to check:");
+//string input = Console.ReadLine();
 
-string resultMessage = palindrom.IsPalindromeLong(input) ? "Word is palindrome." : "Word is not palindrome.";
-Console.WriteLine(resultMessage);
+//string resultMessage = palindrom.IsPalindromeLong(input) ? "Word is palindrome." : "Word is not palindrome.";
+//Console.WriteLine(resultMessage);
+
+//9
+
+//Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.
+
+//Kata.MoveZeroes(new int[] { 1, 2, 0, 1, 0, 1, 0, 3, 0, 1 }) => new int[] { 1, 2, 1, 1, 3, 1, 0, 0, 0, 0 }
+
+int[] array = { 1, 2, 0, 1, 0, 1, 0, 3, 0, 1 };
+
+var sortedArrayByZero = MoveZeroes.MoveZeroesNumber(array);
+
+foreach (var item in sortedArrayByZero)
+{
+    Console.WriteLine(item);
+}
