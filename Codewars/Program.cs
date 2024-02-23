@@ -77,11 +77,19 @@ using Codewars;
 
 //Kata.MoveZeroes(new int[] { 1, 2, 0, 1, 0, 1, 0, 3, 0, 1 }) => new int[] { 1, 2, 1, 1, 3, 1, 0, 0, 0, 0 }
 
-int[] array = { 1, 2, 0, 1, 0, 1, 0, 3, 0, 1 };
+//int[] array = { 1, 2, 0, 1, 0, 1, 0, 3, 0, 1 };
 
-var sortedArrayByZero = MoveZeroes.MoveZeroesNumber(array);
+//var sortedArrayByZero = MoveZeroes.MoveZeroesNumber(array);
 
-foreach (var item in sortedArrayByZero)
-{
-    Console.WriteLine(item);
-}
+//foreach (var item in sortedArrayByZero)
+//{
+//    Console.WriteLine(item);
+//}
+
+// 10Very simple, given a number (integer / decimal / both depending on the language), find its opposite (additive inverse).
+
+var opositeNumber = OppositeNum.GetOpposite(10);
+Console.WriteLine(opositeNumber);
+
+var negativeNumber = OppositeNum.MakePositive(-12);
+Console.WriteLine(negativeNumber);
