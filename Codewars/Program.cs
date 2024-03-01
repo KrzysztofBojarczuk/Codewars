@@ -102,10 +102,26 @@ using System.Linq;
 //or a range of integers denoted by the starting integer separated from the end integer in the range by a dash, '-'. The range includes all integers in the interval including both endpoints. It is not considered a range unless it spans at least 3 numbers. For example "12,13,15-17"
 //Complete the solution so that it takes a list of integers in increasing order and returns a correctly formatted string in the range format.
 
-RangeExtraction range = new RangeExtraction();
+//RangeExtraction range = new RangeExtraction();
 
-int[] array = [-10, -9, -8, -6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19, 20];
+//int[] array = [-10, -9, -8, -6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19, 20];
 
-var extractedArray = range.Extract(array);
+//var extractedArray = range.Extract(array);
 
-Console.WriteLine(string.Join(",", extractedArray));
+//Console.WriteLine(string.Join(",", extractedArray));
+
+//12 
+//Write a program in C# Sharp to show how the three parts of a query operation execute.
+//Expected Output:
+//The numbers which produce the remainder 0 after divided by 2 are :
+//0 2 4 6 8
+int[] n1 = new int[10] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+Exe1 exe1 = new Exe1(n1);
+
+var numbers = exe1.Calc();
+
+foreach (var item in numbers)
+{
+    Console.WriteLine(item);
+}
+
