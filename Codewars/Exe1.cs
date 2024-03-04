@@ -26,5 +26,18 @@ namespace Codewars
 
             //return Number.Where(x => x % 2 == 0).ToArray();
         }
+
+        public int[] Range()
+        {
+            var nQuery =
+               from VrNum in Number
+               where VrNum > 0
+               where VrNum < 12
+               select VrNum;
+
+            return nQuery.ToArray();
+
+            //return Number.Where(x => x > 0 && x < 12).ToArray();
+        }
     }
 }

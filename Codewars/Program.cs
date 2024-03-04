@@ -115,13 +115,26 @@ using System.Linq;
 //Expected Output:
 //The numbers which produce the remainder 0 after divided by 2 are :
 //0 2 4 6 8
-int[] n1 = new int[10] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+//int[] n1 = new int[10] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+//Exe1 exe1 = new Exe1(n1);
+
+//var numbers = exe1.Calc();
+
+//foreach (var item in numbers)
+//{
+//    Console.WriteLine(item);
+//}
+//13Write a program in C# Sharp to find the +ve numbers from a list of numbers using two where conditions in LINQ Query.
+//Expected Output:
+//The numbers within the range of 1 to 11 are :
+
+int[] n1 = new int[] { 1, 3, 6, 9, 10 };
+
 Exe1 exe1 = new Exe1(n1);
 
-var numbers = exe1.Calc();
+var numbers = exe1.Range();
 
 foreach (var item in numbers)
 {
     Console.WriteLine(item);
 }
-
