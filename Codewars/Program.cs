@@ -128,13 +128,21 @@ using System.Linq;
 //Expected Output:
 //The numbers within the range of 1 to 11 are :
 
-int[] n1 = new int[] { 1, 3, 6, 9, 10 };
+//int[] n1 = new int[] { 1, 3, 6, 9, 10 };
+
+//Exe1 exe1 = new Exe1(n1);
+
+//var numbers = exe1.Range();
+
+//foreach (var item in numbers)
+//{
+//    Console.WriteLine(item);
+//}
+
+//14 Write a program in C# Sharp to find the number of an array and the square of each number which is more than 20.
+
+int[] n1 = new int[] { 3, 9, 2, 8, 6, 5 };
 
 Exe1 exe1 = new Exe1(n1);
 
-var numbers = exe1.Range();
-
-foreach (var item in numbers)
-{
-    Console.WriteLine(item);
-}
+exe1.DisplayNumbersWithSquaresGreaterThan20();
