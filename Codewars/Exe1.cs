@@ -39,5 +39,23 @@ namespace Codewars
 
             //return Number.Where(x => x > 0 && x < 12).ToArray();
         }
+
+        public void DisplayNumbersWithSquaresGreaterThan20()
+        {
+
+            var sqNo = from int num in Number
+                       let SqrNo = num * num
+                       where SqrNo > 20
+                       select new { num, SqrNo };
+
+            //var sqNo = Number
+            //    .Select(Number => new { Number, SqrNo = Number * Number })
+            //    .Where(pair => pair.SqrNo > 20);
+
+            foreach (var a in sqNo)
+            {
+                Console.WriteLine(a);
+            }
+        }
     }
 }
