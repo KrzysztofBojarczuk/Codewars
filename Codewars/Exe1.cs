@@ -57,5 +57,28 @@ namespace Codewars
                 Console.WriteLine(a);
             }
         }
+
+        public void DispalyNumberByFrequency()
+        {
+            var n = from x in Number
+                    group x by x into y
+                    select y;
+
+            foreach (var arrNo in n)
+            {
+                Console.WriteLine("Number " + arrNo.Key + " appears " + arrNo.Count() + " times");
+            }
+
+            Console.WriteLine("-------------------");
+
+            var nx = Number.GroupBy(number => number)
+                          .Select(x => new { Number = x.Key, Appears = x.Count() })
+                          .ToList();
+
+            foreach (var arrNo in nx)
+            {
+                Console.WriteLine("Number " + arrNo.Number  + " appears " + arrNo.Appears  + " times");
+            }
+        }
     }
 }
