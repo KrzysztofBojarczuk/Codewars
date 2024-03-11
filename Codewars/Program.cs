@@ -141,8 +141,16 @@ using System.Linq;
 
 //14 Write a program in C# Sharp to find the number of an array and the square of each number which is more than 20.
 
-int[] n1 = new int[] { 3, 9, 2, 8, 6, 5 };
+//int[] n1 = new int[] { 3, 9, 2, 8, 6, 5 };
+
+//Exe1 exe1 = new Exe1(n1);
+
+//exe1.DisplayNumbersWithSquaresGreaterThan20();
+
+//15  Write a program in C# Sharp to display the number and frequency of a given number from an array.
+
+int[] n1 = new int[] { 5, 9, 1, 2, 3, 7, 5, 6, 7, 3, 7, 6, 8, 5, 4, 9, 6, 2 };
 
 Exe1 exe1 = new Exe1(n1);
 
-exe1.DisplayNumbersWithSquaresGreaterThan20();
+exe1.DispalyNumberByFrequency();
