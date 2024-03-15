@@ -80,5 +80,40 @@ namespace Codewars
                 Console.WriteLine("Number " + arrNo.Number  + " appears " + arrNo.Appears  + " times");
             }
         }
-    }
+
+        public void DispalyCharacterFrequency()
+        {
+            string str; 
+
+            Console.Write("\nLINQ : Display the characters and frequency of character from giving string : ");
+            Console.Write("\n----------------------------------------------------------------------------\n");
+            Console.Write("Input the string : ");
+
+
+            str = Console.ReadLine();
+            Console.Write("\n");
+
+            var FreQ = from x in str
+                       group x by x into y
+                       select y;
+
+            Console.Write("The frequency of the characters are :\n");
+            
+            foreach (var ArrEle in FreQ)
+            {
+                Console.WriteLine("Character " + ArrEle.Key + ": " + ArrEle.Count() + " times");
+            }
+
+            var FreQ2 = str.GroupBy(x => x);
+
+            Console.WriteLine("====================================");
+
+            Console.Write("The frequency of the characters are :\n");
+            
+            foreach (var ArrEle in FreQ2)
+            {
+                Console.WriteLine("Character " + ArrEle.Key + ": " + ArrEle.Count() + " times");
+            }
+        }
+    } 
 }
