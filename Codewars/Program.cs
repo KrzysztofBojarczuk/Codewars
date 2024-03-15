@@ -151,6 +151,12 @@ using System.Linq;
 
 int[] n1 = new int[] { 5, 9, 1, 2, 3, 7, 5, 6, 7, 3, 7, 6, 8, 5, 4, 9, 6, 2 };
 
+//Exe1 exe1 = new Exe1(n1);
+
+//exe1.DispalyNumberByFrequency();
+
+//16 Write a program in C# Sharp to display the characters and frequency of each character in a given string.
+
 Exe1 exe1 = new Exe1(n1);
 
-exe1.DispalyNumberByFrequency();
+exe1.DispalyCharacterFrequency();
