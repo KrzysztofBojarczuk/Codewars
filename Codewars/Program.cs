@@ -4,8 +4,6 @@
 using Codewars;
 using System.Text;
 using System.Linq;
-//class Threed
-
 
 //1 Count of positives / sum of negatives
 
