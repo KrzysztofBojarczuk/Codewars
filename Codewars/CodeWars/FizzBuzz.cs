@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Codewars
+namespace Codewars.CodeWars
 {
     public class FizzBuzz
     {
-        public static void FizzBuzzList() {
+        public static void FizzBuzzList()
+        {
 
             var fizzBuzzList = Enumerable.Range(1, 10)
                 .Select(number =>

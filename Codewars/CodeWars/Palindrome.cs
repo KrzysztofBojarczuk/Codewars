@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Codewars
+namespace Codewars.CodeWars
 {
     public class Palindrome
     {
         public bool IsPalindromeLong(string str)
         {
-            str = str.ToLower(); 
+            str = str.ToLower();
 
             int left = 0;
             int right = str.Length - 1;

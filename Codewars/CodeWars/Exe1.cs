@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Codewars
+namespace Codewars.CodeWars
 {
     internal class Exe1
     {
@@ -19,7 +19,7 @@ namespace Codewars
         {
             var nQuery =
                 from VrNum in Number
-                where (VrNum % 2) == 0
+                where VrNum % 2 == 0
                 select VrNum;
             return nQuery.ToArray();
 
@@ -77,13 +77,13 @@ namespace Codewars
 
             foreach (var arrNo in nx)
             {
-                Console.WriteLine("Number " + arrNo.Number  + " appears " + arrNo.Appears  + " times");
+                Console.WriteLine("Number " + arrNo.Number + " appears " + arrNo.Appears + " times");
             }
         }
 
         public void DispalyCharacterFrequency()
         {
-            string str; 
+            string str;
 
             Console.Write("\nLINQ : Display the characters and frequency of character from giving string : ");
             Console.Write("\n----------------------------------------------------------------------------\n");
@@ -98,7 +98,7 @@ namespace Codewars
                        select y;
 
             Console.Write("The frequency of the characters are :\n");
-            
+
             foreach (var ArrEle in FreQ)
             {
                 Console.WriteLine("Character " + ArrEle.Key + ": " + ArrEle.Count() + " times");
@@ -109,11 +109,11 @@ namespace Codewars
             Console.WriteLine("====================================");
 
             Console.Write("The frequency of the characters are :\n");
-            
+
             foreach (var ArrEle in FreQ2)
             {
                 Console.WriteLine("Character " + ArrEle.Key + ": " + ArrEle.Count() + " times");
             }
         }
-    } 
+    }
 }
