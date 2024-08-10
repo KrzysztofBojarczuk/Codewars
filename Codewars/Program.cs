@@ -4,6 +4,18 @@
 using Codewars;
 using System.Text;
 using System.Linq;
+//class Threed
+
+var t = new Thread(WykonajPracę);
+
+t.Start();
+
+t.Join();
+
+void WykonajPracę()
+{
+    Thread.Sleep(5000);
+}
 
 //1 Count of positives / sum of negatives
 
@@ -149,7 +161,7 @@ using System.Linq;
 
 //15  Write a program in C# Sharp to display the number and frequency of a given number from an array.
 
-int[] n1 = new int[] { 5, 9, 1, 2, 3, 7, 5, 6, 7, 3, 7, 6, 8, 5, 4, 9, 6, 2 };
+//int[] n1 = new int[] { 5, 9, 1, 2, 3, 7, 5, 6, 7, 3, 7, 6, 8, 5, 4, 9, 6, 2 };
 
 //Exe1 exe1 = new Exe1(n1);
 
@@ -157,6 +169,6 @@ int[] n1 = new int[] { 5, 9, 1, 2, 3, 7, 5, 6, 7, 3, 7, 6, 8, 5, 4, 9, 6, 2 };
 
 //16 Write a program in C# Sharp to display the characters and frequency of each character in a given string.
 
-Exe1 exe1 = new Exe1(n1);
+//Exe1 exe1 = new Exe1(n1);
 
-exe1.DispalyCharacterFrequency();
+//exe1.DispalyCharacterFrequency();
