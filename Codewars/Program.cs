@@ -6,27 +6,7 @@ using System.Text;
 using System.Linq;
 //class Threed
 
-Console.WriteLine("Program rozpoczął działanie.");
 
-// Tworzenie nowego wątku i przypisanie do niego metody WykonajPracę
-var t = new Thread(WykonajPracę);
-
-Console.WriteLine("Wątek został utworzony, teraz go uruchamiamy.");
-t.Start();
-
-// Czekanie na zakończenie działania wątku
-Console.WriteLine("Czekam na zakończenie wątku.");
-t.Join();
-
-Console.WriteLine("Wątek zakończył działanie. Program kończy działanie.");
-
-
-static void WykonajPracę()
-{
-    Console.WriteLine("Wątek zaczyna pracę.");
-    Thread.Sleep(5000);  // Symulacja długotrwałej operacji
-    Console.WriteLine("Wątek kończy pracę.");
-}
 //1 Count of positives / sum of negatives
 
 //int[] inputArray = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15 };
